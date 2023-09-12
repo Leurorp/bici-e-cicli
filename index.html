@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bici_strada</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- libreria diagramma a torta -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- libreria diagramma a barre -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <header class="header">
+    <a class="logo" href="index.html">&nbsp BICI E CICLI strada</a>
+    <input class="menu-btn" id="menu-btn" type="checkbox">
+    <label class="menu-icon" for="menu-btn">
+      <span class="nav-icon"></span>
+    </label>
+    <ul class="menu">
+      <li><a href="index.html">Strada</a></li>
+      <li><a href="pista.html">Pista</a></li>
+      <li><a href="meccanica.php">Meccanica</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="sendgrid/contatti.php">Contatti</a></li>
+    </ul>
+    <div style="padding: 3px;">
+      <img src="immagini/cyclist-in-a-bycicle-race.jpg" class="foto" height="20%" width="60%">
+    </div>
+  </header>
+  <div class="container-fluid my-5">
+   <div style="position:relative; padding:15px 8px;">
+    <h2>Tanti modi per pedalare</h2>
+    <p style="font-size:18px"><br>
+      Uscire in bicicletta significa sprigionare l'amozione di libertà e la sensazione di avventura primitiva del
+      viaggio fatto con le nostre
+      forze muscolari e mentali.<br>
+      Pedalare per ore potrebbe risultare noioso ma in realtà abbiamo tanti modi di pedalare. C'è chi pedala per
+      competere con gli altri
+      ciclisti, chi per affrontare una sfida individuale fatta di montagna o di pianura per aumentare la media oraria,
+      chi per godersi una
+      bella giornata di sole, chi per scopo terapeutico per riabilitare tendini e muscoli alle gambe. Per i bambini la
+      bicicletta e ancor
+      prima il triciclo equivalgono alla scoperta di un mondo nuovo fatto di esplorazione e avventura.<br>
+      Il mercato che gira attorno al ciclismo è stato sempre attivo e sempre in crescita, soprattutto in questi ultimi
+      anni la bicicletta si è rivelata un mezzo di trasporto economico ed efficace soprattutto nelle città pianeggianti. 
+      Grazie alle
+      <i>eco bike</i> o biciclette elettriche, possiamo pedalare anche nelle città collinari senza dover inzupparci gli
+      abiti di sudore
+      evitando di inquinare l'aria ed allo stesso tempo risparmiando soldi in carburante.
+    </p><br>
+    <h2>Usare il giusto rapporto</h2>
+    <p style="font-size:18px"><br>
+      La combinazione tra la marcia posteriore (pignone o cassetta posteriore) e la marcia anteriore (corona o
+      moltiplica) si chiama
+      rapporto. Il rapporto nel ciclismo è fondamentale per mantenere i muscoli delle gambe in uno stato di lavoro al
+      minimo o in
+      medio sforzo. Un rapporto costruito con un pignone posteriore piccolo e una corona anteriore troppo grande può
+      sviluppare una
+      gran bella e interessante velocità ma se non si è allenati con almeno 500 km/mese può portare a crampi o problemi
+      ai tendini
+      del ginocchio.<br>
+      L'ideale sarebbe mantenere una frequenza di pedalata intorno ai 90 ppm (pedalate per minuto) o comunque maggiori
+      di 85.
+      Per esempio con un rapporto tipo 52 x 17 in pianura senza vento contro, pedalando con una frequenza di 85 ppm
+      potremmo mantenere
+      una velocità circa di 33 km/h senza uno sforzo estremo e senza essere professionisti.<br>
+      Spingendo invece un rapporto come 53 x 11 con le stesse condizioni esterne non potremmo mai arrivare a mantenere
+      85 ppm, a meno che
+      il soggetto sia un professionista o un amatore con altissime qualità da passista e super allenato.<br>
+      Tabella velocità sviluppate dai rapporti piu usati:
+    </p><br>
+    <table style="width:90%; margin:auto" class="table">
+      <caption style="color:rgb(191, 202, 240)"><i>85 pedalate al minuto con ruote da corsa 700 x 28</i></caption>
+      <thead style="background-color:red;">
+        <tr><td>rapporto</td> <td>ped. per min.</td> <td>velocità </td> <td>mt per pedalata</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>42 x 20 </td> <td> 85 </td> <td>22.9 km/h</td> <td> 4.49 mt </td>
+        </tr>
+        <tr> <td>42 x 19 </td> <td> 85 </td> <td>24.1 km/h</td> <td> 4.72 mt </td>
+        </tr>
+        <tr> <td>42 x 18 </td> <td> 85 </td> <td>25.4 km/h</td> <td> 4.98 mt </td>
+        </tr>
+        <tr> <td>42 x 17 </td> <td> 85 </td> <td>26.9 km/h</td> <td> 5.28 mt </td>
+        </tr>
+        <tr> <td>42 x 16 </td> <td> 85 </td> <td>28.6 km/h</td> <td> 5.61 mt </td>
+        </tr>
+        <tr> <td>42 x 15 </td> <td> 85 </td> <td>30.5 km/h</td> <td> 5.98 mt </td>
+        </tr>
+        <tr> <td>42 x 13 </td> <td> 85 </td> <td>35.2 km/h</td> <td> 6.90 mt </td>
+        </tr>
+        <tr> <td>42 x 11 </td> <td> 85 </td> <td>41.6 km/h</td> <td> 8.16 mt </td>
+        </tr>
+        <tr> <td>53 x 19 </td> <td> 85 </td> <td>30.4 km/h</td> <td> 5.96 mt </td>
+        </tr>
+        <tr> <td>53 x 18 </td> <td> 85 </td> <td>32.1 km/h</td> <td> 6.29 mt </td>
+        </tr>
+        <tr> <td>53 x 17 </td> <td> 85 </td> <td>34.0 km/h</td> <td> 6.66 mt </td>
+        </tr>
+        <tr> <td>53 x 16 </td> <td> 85 </td> <td>36.1 km/h</td> <td> 7.08 mt </td>
+        </tr>
+        <tr> <td>53 x 15 </td> <td> 85 </td> <td>38.5 km/h</td> <td> 7.55 mt </td>
+        </tr>
+        <tr> <td>53 x 13 </td> <td> 85 </td> <td>44.4 km/h</td> <td> 8.71 mt </td>
+        </tr>
+        <tr> <td>53 x 11 </td> <td> 85 </td> <td>52.5 km/h</td> <td> 10.29 mt </td>
+        </tr>
+      </tbody>
+    </table>
+  </div><br>
+  <div style="background-color:rgb(45, 41, 41);position:relative; top:00px; padding:8px">
+    <h2> Detraining</h2>
+    <p style="font-size:18px"><br>
+      Per gli appassionati di ciclismo che lavorano sarà dura trovare il tempo per allenarsi in
+      maniera costante
+      durante la settimana e per ovvi motivi si salteranno alcune uscite in bici.<br>
+      Potrebbe quindi accadere l'effetto <i>detraining</i> e sfortunatamente la forma fisica si perderà. Per impedire il
+      <i>detraining</i>
+      occorre pianificare gli allenamenti in base al lavoro ed agli impegni familiari. Se invece di tre uscite
+      settimanali ne facciamo solo
+      una possiamo recuperare in base al tempo che abbiamo a disposizione con una o due uscita in piu nelle settimane
+      successive.<br>
+      Bisogna però stare anche attenti all'eccessivo affaticamento, se non si concede al corpo il tempo sufficiente per
+      riposare il fisico
+      si logorerà ed il rendimento in bici peggiorerà.<br>
+      I miglioramenti che apportate al vostro fisico con l'allenamento si hanno durante il riposo, infatti i muscoli
+      <i>danneggiati</i>
+      durante lo sforzo fisico vengono <i>riparati</i> nel momento successivo all'allenamento e nelle ore di sonno.
+      I sintomi dell'eccessivo affaticamento sono:
+    <ul>
+      <li>battito cardiaco non cresce in bici</li>
+      <li>riposo notturno disturbato</li>
+      <li>muscoli doloranti</li>
+      <li>battiti accellerati di mattina o di notte</li>
+    </ul>
+    </p>
+  </div><br>
+  <div style="background-color:rgb(24, 23, 23);position:relative; top:00px; padding:8px">
+    <h2>Alimentazione, idratazione</h2>
+    <p style="font-size:18px"><br>
+      Bisognerebbe bere tre litri di acqua al giorno e con l'esercizio fisico la quantità di liquidi da assorbire
+      dovrebbe aumentare.
+      Mentre pedalate bevete spesso anche se non avete sete, anche dopo l'allenamento perchè le ore che seguono lo
+      sforzo fisico sono
+      quelle che ricostituiscono i liquidi persi. Se prevedete di fare un'uscita piu lunga di un'ora e partite a stomaco
+      vuoto, portate
+      nella tasca anche qualcosa da mangiare per evitare la crisi di fame che arriva all'improvviso senza avvisare e una
+      volta sopraggiunta,
+      anche se mangiate, non avrete comunque la forza per reggervi in piedi. Laurent Fignon, vincitore di 2
+      Milano-Sanremo e di un
+      giro d'Italia, ando' in crisi di fame, precisamnete in ipoglicemia (mancanza di zuccheri), vivendo il dramma della
+      tappa sul
+      passo Giau del giro d'Italia del 1992, poi soccorso ed aiutato dai suoi compagni di squadra.
+    </p><br>
+    <h2>Soglia anaerobica</h2>
+    <p style="font-size:18px"><br>
+      Il modo giusto per allenarsi e per ottenere ottimi risultati sta nel regolare lo sforzo muscolare, non prolungarlo
+      per non arrivare
+      al punto di strssare troppo la muscolatura. Pedalando con uno sforzo eccessivo prolungato, la produzione di acido
+      lattico nel sangue
+      potrebbe essere maggiore del suo smaltimento, avremmo un eccesso di acido lattico e in poche parole potremmo
+      trovarci <i>al gancio.</i>
+      In questa situazione qualunque ciclista, anche professionista, si vedrebbe costretto a rallentare di molto la
+      velocità per smaltire
+      i dolori brucianti delle gambe. Per evitare questo stato di sforzo supereccessivi (oltre soglia) ci viene in aiuto
+      conoscere la
+      <b>soglia anaerobica.</b><br><br>
+      <b><i>Come conoscere la propria soglia anaerobica senza cardiofrequenzimetro (consultate prima il vostro medico
+          sulle vostre condizioni cardiache)</i></b>
+    </p>
+    <ul>
+      <li>Posizionatevi in un ambiente dove il traffico automobilistico è limitato</li>
+      <li>Fate 15/20 minuti di riscaldamento</li>
+      <li>Percorrete una strada il piu possibile pianeggiante, senza strappi o saliscendi</li>
+      <li>Pedalate per 30 minuti con uno sforzo costante e intenso ma non al massimo, come fosse una cronometro.</li>
+      <li>Mantenete la respirazione in modo ritmico, senza andare in affanno</li>
+      <li>Dopo i 30 minuti prendete nota in una scala da 1 a 5 della vostra sensazione di sforzo</li>
+    </ul>
+    <p style="font-size:18px">
+      Durante il test mantenete la respirazione come se doveste chiacchierare con un compagno di squadra. Se vi
+      accorgete che l'affanno
+      vi costringe a non parlare piu, allora è giunto il momento di allentare lo sforzo muscolare e la velocità.<br>
+      Questa è la vostra soglia anaerobica. In teoria dovrebbe corrispondere a 4 nella vostra scala delle sensazioni
+      perchè quando si
+      pedala alla velocità di soglia, abbiamo ancora energie e gambe per fare uno scatto bruciante. Infatti l'ultimo
+      gradino, il quinto,
+      è quello in cui andremo oltre soglia, zona in cui è meglio non stare per molto tempo.<br>
+      E' importante sapere che l'allenamento serve per spostare la soglia anaerobica sempre piu avanti, ciò significa
+      percorrere lo stesso
+      tratto di strada (ad esempio quello del test) in meno tempo, rimanendo in zona 4 della scala.<br>
+      Oggi esistono cardiofrequenzimetri e misuratori di potenza per sapere quando si è in zona anaerobica ed il test
+      descritto sopra
+      è oramai obsoleto, ma potrebbe essere utili a ciclisti che non si affidano ai numeri sul display di un misuratore.
+      Bisognerebbe riscoprire il piacere di affidarsi alle sensazioni del proprio corpo, pedalando in bici, e non dipendere
+      dai valori
+      dei misuratori elettronici, che sono si utili per una preparazione ottimale, ma che fanno perdere la percezione
+      mentale dello
+      sforzo al ciclista.
+    </p><br>
+    <div style="padding: 3px;background-color:rgb(44, 42, 42)">
+      <h3 style="border:1px solid red; border-radius:25px; color:white; 
+        padding:8px; width:310px">
+        5 zone di frequenza cardiaca</h3>
+      <p style="font-size:18px"><br>
+        Il diagramma circolare si riferisce a un atleta che abbia un apparato cardiaco controllato e senza alcun
+        problema ed è una
+        ipotesi di allenamento di 2 ore con uno sforzo moderato.<br> Gli obbiettivi sono:
+        Capacità aerobica migliorata, aumento della capacità dei polmoni e della velocità respiratoria.
+        Ottimo allenamento cardiovascolare, rafforza il cuore per allenamenti di lunga durata.<br><br>
+        <b>Zona 1: </b><i>Passo rilassato, senza sforzo. Respiro cadenzato.</i><br>
+        <b>Zona 2: </b><i>Respiro leggermente più profondo ma conversazione possibile.</i><br>
+        <b>Zona 3: </b><i>Passo moderato. Più difficile mantenere una conversazione.</i><br>
+        <b>Zona 4: </b><i>Passo veloce e piuttosto faticoso. Respiro corto. Difficile mantenere una
+          conversazione</i><br>
+        <b>Zona 5: </b><i>Passo massimo, non sostenibile a lungo. Respiro veloce. Impossibile mantenere una
+          conversazione</i>
+      </p>
+      <br><br>
+      <div id="piechart" style="width:80%; height:40%;">
+      </div>
+        <br><br><br> 
+        <script type="text/javascript">
+          // Load google charts
+          google.charts.load('current', { 'packages': ['corechart'] });
+          google.charts.setOnLoadCallback(drawChart);
+
+          // Draw the chart and set the chart values
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Sforzo', 'Durata allenamento'],
+              ['Zona 1', 15],
+              ['Zona 2', 23],
+              ['Zona 3', 55],
+              ['Zona 4', 25],
+              ['Zona 5', 2]
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': 'Percentuali riferite al tempo da trascorrere in zona',
+             'width': 320, 'height': 300 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+          }
+        </script>     
+    </div>
+
+    <h3 style="color:white; border:1px solid red; border-radius:25px; padding:3px; max-width:650px">
+      Consumo medio/gg calorie 2 ore di allenamento</h3>
+    <br><br>
+   <div>
+    <canvas id="myPlot" width="280" height="200" style="background-color:white;
+    border:2px solid yellow"></canvas> 
+   </div>
+    <script>
+      let ctx = document.getElementById('myPlot').getContext("2d");
+      let mylabels = ["60","65","70","75","80","85"];
+      let mydata = [2700,2925,3150,3375,3600,3825];
+      let chart = new Chart(ctx,{
+        type: 'bar',
+        data: {
+          labels: mylabels, datasets: [{
+            label: 'consumo di cal/giorno con 2 ore di allenamento',
+            data: mydata,
+            backgroundColor:[
+              '#ffe6e6','#ff9999','#ff3333','#ff1a1a','#cc0000','#990000'],
+            }]
+        },  
+        options: {
+          scales: 
+          {
+            yAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: 'Calorie'
+                        }
+                  }],        
+            xAxes: [{
+              scaleLabel: {
+              display: true,
+              labelString: 'Peso Kg'
+          }
+        }]
+      },
+          title:{
+            display:true,
+            text:"Ipotesi consumo di calorie giornaliero con 2 ore di allenamento",
+            fontSize:25 },
+          layout:{
+            padding:0
+          }
+        }
+      });
+    </script>
+  
+    <canvas id="demo" width="60" height="60" style="margin-left:20px;margin-top: 30px;">
+    </canvas>
+    <script>
+      let canvas = document.getElementById("demo");
+      let context = canvas.getContext("2d");
+      context.beginPath();
+      context.scale(0.5, 0.3);
+      context.moveTo(10, 34);
+      context.lineTo(10, 190);
+      context.lineTo(110, 190);
+      context.lineWidth = 30;
+      context.strokeStyle = "#0000cd";
+      context, lineCap = "round";
+      context.stroke();
+
+      context.beginPath();
+      context.lineWidth = 15;
+      context.strokeStyle = "#dc143c";
+      context.moveTo(42, 155);
+      context.lineTo(85, 155);
+      context.stroke();
+
+      context.beginPath();
+      context.arc(86, 125, 30, 0.5 * Math.PI, 1.5 * Math.PI, true);
+      context.lineCap = "round";
+      context.stroke();
+
+      context.beginPath();
+      context.lineCap = "square";
+      context.moveTo(80, 95);
+      context.lineTo(60, 95);
+      context.stroke();
+
+      context.beginPath();
+      context.arc(86, 78, 17, 0.5 * Math.PI, 1.5 * Math.PI, true);
+      context.lineCap = "round";
+      context.stroke();
+
+      context.beginPath();
+      context.lineCap = "square";
+      context.moveTo(80, 60);
+      context.lineTo(43, 60);
+      context.stroke();
+
+      context.beginPath();
+      context.lineCap = "square";
+      context.moveTo(43, 60);
+      context.lineTo(43, 155);
+      context.stroke();   
+    </script>
+    <h3 style="color:rgb(238, 217, 217); display:inline; margin:-10px 0px 0px 20px"> WEB PRODUCTION </h3>
+  </div>
+</body>
+</html>
