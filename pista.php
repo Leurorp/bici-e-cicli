@@ -17,14 +17,14 @@
 <body>
 
 <header class="header">
-  <a class="logo" href="index.html">BICI E CICLI pista</a>
+  <a class="logo" href="index.php">BICI E CICLI pista</a>
   <input class="menu-btn" id="menu-btn" type="checkbox">
   <label class="menu-icon" for="menu-btn">
     <span class="nav-icon"></span>
   </label>
   <ul class="menu">
-    <li><a href="index.html">Strada</a></li>
-    <li><a href="pista.html">Pista</a></li>
+    <li><a href="index.php">Strada</a></li>
+    <li><a href="pista.php">Pista</a></li>
     <li><a href="meccanica.php">Meccanica</a></li>
     <li><a href="shop.html">Shop</a></li>
     <li><a href="sendgrid/contatti.php">Contatti</a></li>

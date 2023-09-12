@@ -25,17 +25,17 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <header class="header">
-    <a class="logo" href="index.html">&nbsp BICI E CICLI strada</a>
+    <a class="logo" href="index.php">&nbsp BICI E CICLI strada</a>
     <input class="menu-btn" id="menu-btn" type="checkbox">
     <label class="menu-icon" for="menu-btn">
       <span class="nav-icon"></span>
     </label>
     <ul class="menu">
-      <li><a href="index.html">Strada</a></li>
-      <li><a href="pista.html">Pista</a></li>
-      <li><a href="meccanica.php">Meccanica</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="sendgrid/contatti.php">Contatti</a></li>
+      <li><a href="http://127.0.0.1:80/PHP/BICI_E_CICLI/index.php">Strada</a></li>
+      <li><a href="http://127.0.0.1:80/PHP/BICI_E_CICLI/pista.php">Pista</a></li>
+      <li><a href="http://127.0.0.1:80/PHP/BICI_E_CICLI/meccanica.php">Meccanica</a></li>
+      <li><a href="http://127.0.0.1:80/PHP/BICI_E_CICLI/shop.html">Shop</a></li>
+      <li><a href="http://127.0.0.1:80/PHP/BICI_E_CICLI/sendgrid/contatti.php">Contatti</a></li>
     </ul>
     <div style="padding: 3px;">
       <img src="immagini/cyclist-in-a-bycicle-race.jpg" class="foto" height="20%" width="60%">
